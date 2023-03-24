@@ -9,7 +9,10 @@ namespace MeuSiteEmMVC.Controllers
         
         public IActionResult Index()
         {
-            return View();
+            HomeModel home = new HomeModel();
+            home.Nome = "Charles Silva";
+            home.Email = "Charles_humberto@hotmail.com.br";
+            return View(home);
         }
 
         public IActionResult Privacy()
